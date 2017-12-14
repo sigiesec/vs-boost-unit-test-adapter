@@ -95,7 +95,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Discovering ({0}):   -> [{1}]5D;]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[探索中 ({0}): -> [{1}]5D;]]></Val>
+            <Val><![CDATA[検出中 ({0}):   -> [{1}]5D;]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -104,7 +104,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Exception caught while discovering tests: {0} ({1})]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テストの探索中に例外がキャッチされました: {0} ({1})]]></Val>
+            <Val><![CDATA[テストの検出中に例外がキャッチされました: {0} ({1})]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -113,7 +113,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Exception caught while discovering tests for {0} ({1} - {2})]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0} のテストの探索中に例外がキャッチされました ({1} - {2})]]></Val>
+            <Val><![CDATA[{0} のテストの検出中に例外がキャッチされました ({1} - {2})]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
