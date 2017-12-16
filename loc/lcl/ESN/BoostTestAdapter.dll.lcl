@@ -140,7 +140,7 @@
         <Str Cat="Text">
           <Val><![CDATA[No suitable executor found for [{0}]5D;.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[No encontrado ningún ejecutor adecuado para [{0}]5D;.]]></Val>
+            <Val><![CDATA[No se ha encontrado ningún ejecutor adecuado para [{0}]5D;.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
