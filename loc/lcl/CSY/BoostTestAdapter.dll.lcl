@@ -356,7 +356,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup error: no test cases matching filter (test name contains commas)]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Chyba nastavení testu: filtru neodpovídají žádné testovací případy (názvy testů obsahují čárky).]]></Val>
+            <Val><![CDATA[Chyba nastavení testu: Filtru neodpovídají žádné testovací případy (názvy testů obsahují čárky).]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
