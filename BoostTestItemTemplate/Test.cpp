@@ -3,6 +3,6 @@
 
 BOOST_AUTO_TEST_CASE(myTestCase)
 {
-  BOOST_CHECK_EQUAL(1, 1);
-  BOOST_CHECK(true);
+  BOOST_TEST(1 == 1);
+  BOOST_TEST(true);
 }
