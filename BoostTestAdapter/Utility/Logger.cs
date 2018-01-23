@@ -31,8 +31,6 @@ namespace BoostTestAdapter.Utility
             _loggerInstance = logger; //VS sink handle
 
             ConfigureLog4Net();
-
-            Info(Resources.LoggerInitialized, log4net.GlobalContext.Properties["LogFilePath"]);
         }
 
         /// <summary>
