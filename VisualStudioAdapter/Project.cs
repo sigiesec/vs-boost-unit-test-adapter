@@ -78,7 +78,7 @@ namespace VisualStudioAdapter
             get
             {
                 var activeConfiguration = this._project.ConfigurationManager?.ActiveConfiguration;
-                return activeConfiguration == null ? null : activeConfiguration.ConfigurationName + "|" + activeConfiguration.PlatformName;
+                return activeConfiguration == null ? null : (activeConfiguration.ConfigurationName + "|" + activeConfiguration.PlatformName);
             }
         }
 
