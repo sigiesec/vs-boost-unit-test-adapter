@@ -60,7 +60,7 @@ namespace VisualStudioAdapter
                 if (vcProj != null)
                 {
                     var configs = vcProj.Configurations as IVCCollection;
-                    if (configs != null)
+                    if (configs != null && ActiveConfigurationName != null)
                     {
                         return configs.Item(ActiveConfigurationName) as VCConfiguration;
                     }
@@ -77,7 +77,8 @@ namespace VisualStudioAdapter
         {
             get
             {
-                return this._project.ConfigurationManager.ActiveConfiguration.ConfigurationName + "|" + this._project.ConfigurationManager.ActiveConfiguration.PlatformName;
+                var activeConfiguration = this._project.ConfigurationManager.ActiveConfiguration;
+                return activeConfiguration == null ? null : activeConfiguration.ConfigurationName + "|" + activeConfiguration.PlatformName;
             }
         }
 
