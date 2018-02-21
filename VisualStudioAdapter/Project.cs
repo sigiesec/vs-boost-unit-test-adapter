@@ -15,7 +15,7 @@ namespace VisualStudioAdapter
     /// </summary>
     class Project
     {
-        private EnvDTE.Project _project = null;
+        private readonly EnvDTE.Project _project;
         private ProjectConfiguration _configuration = null;
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace VisualStudioAdapter
         {
             get
             {
-                var activeConfiguration = this._project.ConfigurationManager.ActiveConfiguration;
+                var activeConfiguration = this._project.ConfigurationManager?.ActiveConfiguration;
                 return activeConfiguration == null ? null : activeConfiguration.ConfigurationName + "|" + activeConfiguration.PlatformName;
             }
         }
